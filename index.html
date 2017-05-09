@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SEXTA APLICACION</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app6.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js">
+<!-- End WOWSlider.com HEAD section -->
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/p1.jpg','imagenes/a1.jpg')">
+
+<div data-role="page" id="Principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> BATALLA DE PUEBLA</h1>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>PUEBLA</h1>
+<div>
+<p>Esta es la ciudad de Puebla</p>
+<br>
+</div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('puebla','','imagenes/p1.jpg',1)"><img src="imagenes/P.jpg" width="1200" height="707" id="puebla"></a></div>
+</div>
+</div>
+
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> ANTECEDENTES</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>BATALLA DEL 4 DE MAYO</h2>
+
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>BATALLA DEL 5 DE MAYO</h2>
+
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>CONSECUENCIAS</h2>
+
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>LUGARES HISTORICOS</h2>
+</a>
+</li>
+</ul>
+</div>
+
+<div data-role="main" class="ui-content" align="center">
+ <div style="width:40%">
+   <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+    <li class="ui-first-child ui-last-child">
+       <a href="https://es.wikipedia.org/wiki/Batalla_de_Atlixco" target="_self" data-role="button">
+    <h2>Batalla del 4 de mayo</h2>
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="https://es.wikipedia.org/wiki/Batalla_de_Puebla" target="_self" id="Batalla del 5 de Mayo" data-role="button">
+    <h2> Batalla del 5 de Mayo</h2>
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="http://www.paxala.com/la-batalla-de-puebla/" target="_self" data-role="button">
+    <h2> Consecuencias de la Batalla del 5 de Mayo</h2>
+    </a>
+    </li>
+   </ul> 
+   </div>
+   </div>
+   
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="imagenes/icon.jpg" width="113" height="95">
+</div>
+<div>
+<h4>Aplicacion Seis</h4>
+<h4>Aurora Berenice Gonzalez Aguilar</h4>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>ANTECEDENTES</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>ANTECEDENTES</h2>
+<p>La Batalla de Atlixco tuvo lugar el 4 de mayo de 1862 en las inmediaciones de la Hacienda de las Traperas en Atlixco en el estado de Puebla, México, entre elementos del ejército mexicano de la república, al mando de los generales Antonio Carvajal y Tomás O'Horan contra las tropas al servicio del Segundo Imperio Mexicano comandadas por el general José María Cobos y de Leonardo Márquez, compuesta de soldados conservadores mexicanos en apoyo de envío de refuerzos para llevar a cabo la Batalla de Puebla, durante la Segunda Intervención Francesa en México.1En octubre de 1861, Francia, Inglaterra y España suscribieron la Convención de Londres, en la cual se comprometieron a enviar contingentes militares a México ya que este tenía una gran deuda de 80 millones de pesos, aproximadamente eran 69 millones para los ingleses, 9 millones para los españoles y 2 millones para Francia.
+
+La alianza tripartita amenazó al presidente Benito Juarez con una invasión inminente si no se saldaba por completo las deudas que México tenía con los tres países europeos.
+
+Juarez responde con un exhorto para  lograr un arreglo amistoso, y los invitó a conferenciar. Sin embargo, sabía que había una guerra inminente y trató de proteger la Ciudad de México trasladando pertrechos y  ordenó la fortificación de Puebla. Creo al Ejército de Oriente y el hombre que se designó en el mando fue el general Ignacio Zaragoza.
+
+En un principio la Alianza Tripartita aceptó el llamado al diálogo de Benito Juarez y sus representantes se reunieron con Manuel Doblado, ministro de Relaciones Exteriores del gobierno mexicano, quien consiguió que Juan Prim, representante español, y Lord John Russell por Inglaterra se retiraran. A este acuerdo se le conoce como los Tratados Preliminares de la Soledad.
+
+El 5 de marzo, cuando aún se realizaban las negociaciones de los Tratados de la Soledad, llegó a Veracruz un contingente militar francés bajo el mando de Charles Ferdinand Latrille, conde de Lorencez. A finales de abril, Lorencez desconoció los Tratados de Soledad y se puso en marcha, junto con sus efectivos, hacia Puebla, con el fin último de conquistar la Ciudad de México.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ANTECEDENTES','','imagenes/P.jpg',0)"><img src="imagenes/atlixco.jpg" width="683" height="326" id="ANTECEDENTES"></a> </div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>AplicacioN Seis, ABGA</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>BATALLA DEL 4 DE MAYO</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>BATALLA DEL 4 DE MAYO:</h2>
+<p> La Batalla de Atlixco tuvo lugar el 4 de mayo de 1862 en las inmediaciones de la Hacienda de las Traperas en Atlixco en el estado de Puebla, México, entre elementos del ejército mexicano de la república, al mando de los generales Antonio Carvajal y Tomás O'Horan contra las tropas al servicio del Segundo Imperio Mexicano comandadas por el general José María Cobos y de Leonardo Márquez, compuesta de soldados conservadores mexicanos en apoyo de envío de refuerzos para llevar a cabo la Batalla de Puebla, durante la Segunda Intervención Francesa en México.1.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('atlixco','','imagenes/a1.jpg',1)"><img src="imagenes/a2.jpg" width="640" height="480" id="atlixco"></a> </div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+   <h4>Aplicacion Seis, ABGA</h4>
+   </div>
+   </div>
+   
+    
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>BATALLA DEL 5 DE MAYO</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <h2> BATALLA DE PUEBLA </h2>
+  <p>El 5 de mayo a las 9:15am aparecen los franceses en el horizonte pero no es sino hasta las 11:15am cuando comienzan las hostilidades anunciándose con un cañonazo desde el Fuerte de Guadalupe y acompañado por los repiques de las campanas de la ciudad.
+
+El conde de Lorencez ordena una maniobra sorpresiva que divide a la columna francesa en dos y que da como resultado a 4,000 hombres marchando para atacar los Fuertes de Loreto y Guadalupe. Esta decisión pudo ser la causa de la derrota francesa ya que los mexicanos contaban con la ventaja en estas posiciones.
+
+ El 6o. Batallón de la Guardia Nacional del Estado de Puebla, bajo el mando del entonces coronel Juan Nepomuceno Méndez, fue el primer cuerpo del Ejército de Oriente en hacer frente a los franceses, al ubicarse en la línea comprendida entre los fuertes, y rechazar su ataque.
+
+Varios embates franceses fueron repelidos por la resistencia del Ejército Mexicano como es el caso de los zuavos, el regimiento de élite de la infantería francesa, quienes iniciaron un sigiloso ascenso hacia el Fuerte de Guadalupe pero fueron recibidos con bayonetas y obligados a retroceder.
+
+El coronel mexicano José Rojo avisó a Antonio Álvarez que era tiempo de que la caballería mexicana entrara en acción para alcanzar una victoria completa. Ordenó a los Carabineros de Pachuca cargar sobre los restos de la columna, disparando sus carabinas y lanzando mandobles de sable sobre los franceses, siendo totalmente rechazados.
+
+A las dos y media de la tarde, cuando los mexicanos empezaban a vislumbrar la victoria, Lorencez se dispuso a lanzar el último asalto, dirigiendo a los Cazadores de Vincennes y el Regimiento de Zuavos hacia Guadalupe. Zaragoza dispuso que el Batallón Reforma de San Luis Potosí saliera en auxilio de los fuertes.
+
+Luego de ser repelidos por última vez, las fuerzas del Ejército Expedicionario Francés comenzaron a huir completamente dispersados. Se replegaron a la hacienda Los Álamos, para finalmente retirarse hacia Amozoc.</p>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/4ma1.jpg" alt="4ma-1" title="4ma-1" id="wows1_0"/></li>
+		<li><img src="data1/images/4ma2.jpg" alt="4ma-2" title="4ma-2" id="wows1_1"/></li>
+		<li><img src="data1/images/ante.jpg" alt="ante" title="ante" id="wows1_2"/></li>
+		<li><img src="data1/images/atlixco.jpg" alt="atlixco" title="atlixco" id="wows1_3"/></li>
+		<li><img src="data1/images/b1.jpg" alt="B1" title="B1" id="wows1_4"/></li>
+		<li><img src="data1/images/b2.jpg" alt="B2" title="B2" id="wows1_5"/></li>
+		<li><img src="data1/images/b3.jpg" alt="B3" title="B3" id="wows1_6"/></li>
+		<li><img src="data1/images/b4.jpg" alt="B4" title="B4" id="wows1_7"/></li>
+		<li><img src="data1/images/b5.jpg" alt="B5" title="B5" id="wows1_8"/></li>
+		<li><img src="data1/images/b6.jpg" alt="B6" title="B6" id="wows1_9"/></li>
+		<li><img src="data1/images/b7.jpg" alt="B7" title="B7" id="wows1_10"/></li>
+		<li><img src="data1/images/b8.jpg" alt="B8" title="B8" id="wows1_11"/></li>
+		<li><img src="data1/images/b9.jpg" alt="B9" title="B9" id="wows1_12"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/b10.jpg" alt="jquery slideshow" title="B10" id="wows1_13"/></a></li>
+		<li><img src="data1/images/b12.jpg" alt="B12" title="B12" id="wows1_14"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="4ma-1"><span><img src="data1/tooltips/4ma1.jpg" alt="4ma-1"/>1</span></a>
+		<a href="#" title="4ma-2"><span><img src="data1/tooltips/4ma2.jpg" alt="4ma-2"/>2</span></a>
+		<a href="#" title="ante"><span><img src="data1/tooltips/ante.jpg" alt="ante"/>3</span></a>
+		<a href="#" title="atlixco"><span><img src="data1/tooltips/atlixco.jpg" alt="atlixco"/>4</span></a>
+		<a href="#" title="B1"><span><img src="data1/tooltips/b1.jpg" alt="B1"/>5</span></a>
+		<a href="#" title="B2"><span><img src="data1/tooltips/b2.jpg" alt="B2"/>6</span></a>
+		<a href="#" title="B3"><span><img src="data1/tooltips/b3.jpg" alt="B3"/>7</span></a>
+		<a href="#" title="B4"><span><img src="data1/tooltips/b4.jpg" alt="B4"/>8</span></a>
+		<a href="#" title="B5"><span><img src="data1/tooltips/b5.jpg" alt="B5"/>9</span></a>
+		<a href="#" title="B6"><span><img src="data1/tooltips/b6.jpg" alt="B6"/>10</span></a>
+		<a href="#" title="B7"><span><img src="data1/tooltips/b7.jpg" alt="B7"/>11</span></a>
+		<a href="#" title="B8"><span><img src="data1/tooltips/b8.jpg" alt="B8"/>12</span></a>
+		<a href="#" title="B9"><span><img src="data1/tooltips/b9.jpg" alt="B9"/>13</span></a>
+		<a href="#" title="B10"><span><img src="data1/tooltips/b10.jpg" alt="B10"/>14</span></a>
+		<a href="#" title="B12"><span><img src="data1/tooltips/b12.jpg" alt="B12"/>15</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+  
+   </div>
+  </div>
+   <div data-role="footer" data-theme="b" data-position="fixed">
+   <h4>Aplicacion Seis, ABGA</h4>
+   </div>
+   </div>
+   
+   
+   <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>CONSECUENCIAS</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <h2>CONSECUENCIAS DE LA BATALLA</h2>
+  <p> Mientras se libraba la batalla, en el Palacio Nacional y en la Ciudad de México en general se vivía un ambiente de tensa espera. Lo último que se sabía de Puebla era el telegrama enviado por Zaragoza hacia las 12:30 del día, en el que avisaba que el fuego de artillería de ambos lados había iniciado. Luego, silencio. Ante la incertidumbre, el gobierno había hecho salir precipitadamente al general Florencio Antillón al mando de los Batallones de Guanajuato, quedando como guardianes de la capital sólo 2,000 hombres del Regimiento de Coraceros Capitalinos y algunos centenares de milicianos pobremente armados. Si las tropas guanajuatenses se perdían, la capital quedaría desprotegida.
+
+A las 4:15 de la tarde finalmente se recibieron noticias:
+
+... Sobre el campo a las dos y media.— Dos horas y media nos hemos batido. El enemigo ha arrojado multitud de granadas.— Sus columnas sobre el cerro de Loreto y Guadalupe han sido rechazadas y seguramente atacó con cuatro mil hombres. Todo su impulso fue sobre el cerro.— En este momento se retiran las columnas y nuestras fuerzas avanzan sobre ellas. Comienza un fuerte aguacero.— I. Zaragoza8
+Zaragoza envió más tarde otro telegrama en el que dijo que los franceses habían iniciado la retirada hacia Amozoc, pero sin mencionar el resultado final de la batalla. Finalmente, a las 5:49 de la tarde se recibió otro parte, dirigido al ministro de Guerra, que causó júbilo (y un gran alivio) en Palacio Nacional:
+
+... Las armas del Supremo Gobierno se han cubierto de gloria: el enemigo ha hecho esfuerzos supremos por apoderarse del Cerro de Guadalupe, que atacó por el oriente de izquierda y derecha durante tres horas: fue rechazado tres veces en completa dispersión y en estos momentos está formado en batalla, fuerte de más de 4,000 hombres, frente al cerro de Guadalupe, fuera de tiro. No lo bato, como desearía, porque el Gobierno sabe (que) no tengo para ello fuerza bastante. Calculo la pérdida del enemigo, que llegó hasta los fosos de Guadalupe en su ataque, en 600 o 700 entre muertos y heridos; 400 habremos tenido nosotros. Sírvase vd. dar cuenta de este parte al C. Presidente.— I. Zaragoza9
+Dos horas después de haber sido remitido el parte anterior a la Secretaría de Guerra, el presidente de la República recibia el siguiente:
+
+... Señor Presidente.-Estoy muy contento con el comportamiento de mis generales y soldados. Todos se han portado bien.—Los franceses han llevado una lección muy severa; pero en obsequio de la verdad diré: que se han batido como bravos, muriendo una gran parte de ellos en los fosos de las trincheras de Guadalupe. Sea para bien, Sr. Presidente. Deseo que nuestra querida Patria, hoy tan desgraciada, sea feliz y respetada de todas las Naciones..— I. Zaragoza</p>
+  </div>
+  </div>
+   <div data-role="footer" data-theme="b" data-position="fixed">
+   <h4>Aplicacion Seis, ABGA</h4>
+   </div>
+   </div>
+   
+   
+   <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>LUGARES HISTORICOS</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>LUGARES QUE TUVIERON PRECENCIA DE LA BATALLA DEL 4 Y 5 DE MAYO</h2></div>
+     <h3>ATLIXCO PUEBLA</h3>
+<p> Batalla del 4 de Mayo.</p></div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Atlixco</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/atlixco.jpg" width="72%" height="45%">
+</div>
+</div>
+</div>
+
+
+ <div data-role="content" align="center">
+    <div>
+     <h3>FUERTE DE LORETO Y GUADALUPE</h3>
+<p> Batalla del 5 de Mayo.</p></div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>PUEBLA</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/lyg.jpg" width="72%" height="45%">
+</div>
+</div>
+</div>
+
+
+ <div data-role="content" align="center">
+    <div>
+    <h2> LUGARES EN CONMEMORACION DE LA BATALLA</h2>
+     <h3>MONUMENTO EMBLEMATICO DE LOS 150 AÑOS DE LA BATALLA</h3>
+<p> Batalla del 5 de Mayo.</p></div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>PUEBLA</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/M5.jpg" width="72%" height="45%">
+</div>
+</div>
+</div>
+
+ <div data-role="content" align="center">
+    <div>
+     <h3>MUSEO INTERACTIVO DE LA BATALLA </h3>
+<p> Batalla del 5 de Mayo.</p></div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>PUEBLA</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/M.jpg" width="72%" height="45%">
+</div>
+</div>
+</div>
+</div>
+
+      </div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+      <h4>Aplicacion Seis, ABGA</h4>
+        </div>
+      </div>
+      
+      
+      
+
+</body>
+</html>
